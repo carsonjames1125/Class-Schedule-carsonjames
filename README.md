@@ -11,13 +11,15 @@
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+GitHub Webpage: https://carsonjames1125.github.io/Work-Schedule-carsonjames/
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+---
+<br>
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+ ![alt text](./images/application%20deployment.png)
+
+ ![alt text](./images/local%20storage.png)
+
 
 ## Credits
 
