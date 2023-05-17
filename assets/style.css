@@ -3,6 +3,32 @@ body {
     font-size: 16px;
   }
   
+  .header {
+    padding: 35px;
+    border-bottom: black;
+    border-bottom-style: double;
+    text-align: center;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: beige;
+  }
+
+  .header h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    color: black;
+  }
+
+  .subhead {
+    text-decoration: underline;
+    font-size: 25px;
+    color: purple;
+}
+
+  body { 
+  background-color: lightblue
+}
+
   textarea {
     background: transparent;
     border: none;
@@ -11,8 +37,10 @@ body {
     border-left: 1px solid black;
     padding: 10px;
   }
-  
-  .description {
+  .container { 
+    padding: 25px;
+  }
+  .events {
     white-space: pre-wrap;
   }
   
@@ -21,13 +49,18 @@ body {
   }
   
   .row {
-    border-top: 1px solid white;
+    border-top: 1px solid rgb(2, 2, 2);
+    border-bottom: 1px solid black;
+    padding: 1px;
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: rgb(219, 230, 173);
     color: #000000;
     border-top: 1px dashed #000000;
+    border-left: 1px dashed rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    vertical-align: middle;
   }
   
   .past {
@@ -49,14 +82,21 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: white;
-    justify-content: right;
+    background-color: rgb(32, 74, 245);
+    color: rgb(249, 248, 248);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
+  }
+
+  .saveTxt{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: none;
   }
 
  
