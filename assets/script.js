@@ -49,13 +49,17 @@ function changeColor() {
 
   $('.time-block').each(function () {
     // send the function through a loop for all times listed
-    var schTime = parseInt($(this).attr("id"));
+    var schTime = parseInt($(this).attr('id').split()[1]);
     // if the time block equals the current time it'll give the class present and remove future or past as the class
-    if (schTime === currentTime) {
-      $('.time-block').addClass('present');
-    } else if (schTime > currentTime) {
+    if (schTime < currentTime) {  
       $(this).addClass('past');
+    } else if (schTime === currentTime) {
+      $(this).removeClass('future');
+      $(this).removeClass('past');
+      $(this).addClass('present');
     } else {
+      $(this).removeClass('past');
+      $(this).removeClass('present');
       $(this).addClass('future');
     }
   });

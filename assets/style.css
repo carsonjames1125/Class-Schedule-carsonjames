@@ -87,6 +87,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
   }
+
+  .saveBtn:hover {
+    background-color: lightblue;
+    color: #fa4903;
+  }
   
   .saveBtn i:hover {
     font-size: 20px;
