@@ -1,3 +1,9 @@
+// need an if statement to link the current time to the color of the block
+// need a day.js function to always keep the updated time in the document
+// need a function that save the data entered to the local storage and saves the itmes in the text area through a refresh event
+
+
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
