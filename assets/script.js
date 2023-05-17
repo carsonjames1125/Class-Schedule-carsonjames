@@ -23,6 +23,7 @@ $('.saveBtn').on('click', function() {
   
 
   localStorage.setItem(timeSlot, textArea);
+  // this is how the local storage with log the values entered into the text blocks.
 
 });
 
@@ -41,3 +42,23 @@ $('#6pm .events').val(localStorage.getItem('6pm'));
 // this grabs the time from the time block and what ever description is and was in that text area. 
 // and updates accordingly if values are changed
 
+function changeColor() {
+
+  // need a variable to determine the time
+  var currentTime = dayjs('hours');
+
+  $('.time-block').each(function () {
+    // send the function through a loop for all times listed
+    var schTime = parseInt($(this).attr("id"));
+    // if the time block equals the current time it'll give the class present and remove future or past as the class
+    if (schTime === currentTime) {
+      $('.time-block').addClass('present');
+    } else if (schTime > currentTime) {
+      $(this).addClass('past');
+    } else {
+      $(this).addClass('future');
+    }
+  });
+}
+
+changeColor();
