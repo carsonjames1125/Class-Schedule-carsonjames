@@ -6,17 +6,14 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 
-var rightNow = moment();
+// variables for the time and where is will be stored. 
+var rightNow = dayjs();
 var headerTimeEl = document.querySelector('.time');
 
-$('.time').text(rightNow.format('llll'));
+// clock display in the header
+$(headerTimeEl).text(rightNow.format('dddd MM-DD-YYYY hh:mm:ss'));
 
-
-
-
-
-
-
+// local storage and event listeners for the save button
 
 
 

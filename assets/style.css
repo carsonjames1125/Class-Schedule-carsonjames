@@ -22,7 +22,7 @@ body {
   .subhead {
     text-decoration: underline;
     font-size: 25px;
-    color: purple;
+    color: rgba(233, 146, 6, 0.662);
 }
 
   body { 
@@ -99,4 +99,9 @@ body {
     text-transform: none;
   }
 
+  .time {
+    font-size: 20px;
+    color: lightcoral;
+    font-weight: bold;
+  }
  
