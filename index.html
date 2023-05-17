@@ -29,38 +29,25 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container-lg px-5">
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        --> <!-- DELETE THIS COMMENT -->
-
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
       <div id="9am" class="row time-block present">
-        <div class="col-md-1 hour">9:00 am</div> <!-- .hour in css -->
-        <textarea class="col-8 col-md-10 dailyplanner" rows="3"> </textarea>
+        <div class="col-2 col-md-1 hour">9:00 am</div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <!-- Example of a a present time block. The "present" class adds a red background color. -->
       <div id="10am" class="row time-block future">
         <div class="col-2 col-md-1 hour">10:00 am</div> <!-- .hour in css -->
-        <textarea class="col-8 col-md-10 dailyplanner" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
       <div id="11am" class="row time-block future">
         <div class="col-2 col-md-1 hour">11:00 am </div> <!-- .hour in css -->
-        <textarea class="col-8 col-md-10 dailyplanner" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
@@ -68,38 +55,63 @@
 
       <div id="12pm" class="row time-block future">
         <div class="col-2 col-md-1 hour">12:00 pm </div> <!-- .hour in css -->
-        <textarea class="col-8 col-md-10 dailyplanner" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>  
+      
+      <div id="1pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">1:00 pm </div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>  
+      
+      <div id="2pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">2:00 pm </div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>  
+      
+      <div id="3pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">3:00 pm</div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>  
+      
+      <div id="4pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">4:00 pm</div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"> </textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+      </div>  
+      
+      <div id="5pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">5:00 pm </div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"></textarea>
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
+     </div>     
+     
+     <div id="6pm" class="row time-block future">
+        <div class="col-2 col-md-1 hour">6:00 pm </div> <!-- .hour in css -->
+        <textarea class="col-8 col-md-10 events" rows="2"></textarea>
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div>
-
-      </div>
-      
-      <div>
-        
-      </div>
+    </div>
      
-      <div>
-        
-      </div>
-
-      <div>
-        
-      </div>
-
-      <div>
-        
-      </div>
-
-      <div>
-        
-      </div>
-
-
-
+     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> <!-- jquery link -->
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"></script> <!-- day.js link -->
     <script src="./assets/script.js"></script> <!-- javascript -->
