@@ -15,28 +15,29 @@ $(headerTimeEl).text(rightNow.format('dddd MM-DD-YYYY hh:mm:ss'));
 
 // local storage and event listeners for the save button
 
+$('.saveBtn').on('click', function() {
+  // variable for the text area contents .val() pulls the exact value from the box located in the .events class
+  var textArea = $(this).siblings('.events').val();
+  //variable for the id descriptor, pulls the text from the id. i.e. 9am, 10am, 11am, etc. 
+  var timeSlot = $(this).parent().attr('id');
+  
 
+  localStorage.setItem(timeSlot, textArea);
 
+});
 
+// Now need to work on setting up a way to grab the items in the local storage by their id and class for the above function
 
+$('#9am .events').val(localStorage.getItem('9am'));
+$('#10am .events').val(localStorage.getItem('10am'));
+$('#11am .events').val(localStorage.getItem('11am'));
+$('#12pm .events').val(localStorage.getItem('12pm'));
+$('#1pm .events').val(localStorage.getItem('1pm'));
+$('#2pm .events').val(localStorage.getItem('2pm'));
+$('#3pm .events').val(localStorage.getItem('3pm'));
+$('#4pm .events').val(localStorage.getItem('4pm'));
+$('#5pm .events').val(localStorage.getItem('5pm'));
+$('#6pm .events').val(localStorage.getItem('6pm'));
+// this grabs the time from the time block and what ever description is and was in that text area. 
+// and updates accordingly if values are changed
 
-$(function () {
-    // TODO: Add a listener for click events on the save button. This code should
-    // use the id in the containing time-block as a key to save the user input in
-    // local storage. HINT: What does `this` reference in the click listener
-    // function? How can DOM traversal be used to get the "hour-x" id of the
-    // time-block containing the button that was clicked? How might the id be
-    // useful when saving the description in local storage?
-    //
-    // TODO: Add code to apply the past, present, or future class to each time
-    // block by comparing the id to the current hour. HINTS: How can the id
-    // attribute of each time-block be used to conditionally add or remove the
-    // past, present, and future classes? How can Day.js be used to get the
-    // current hour in 24-hour time?
-    //
-    // TODO: Add code to get any user input that was saved in localStorage and set
-    // the values of the corresponding textarea elements. HINT: How can the id
-    // attribute of each time-block be used to do this?
-    //
-    // TODO: Add code to display the current date in the header of the page.
-  });
