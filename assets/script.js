@@ -19,7 +19,7 @@ $('.saveBtn').on('click', function() {
   // variable for the text area contents .val() pulls the exact value from the box located in the .events class
   var textArea = $(this).siblings('.events').val();
   //variable for the id descriptor, pulls the text from the id. i.e. 9am, 10am, 11am, etc. 
-  var timeSlot = $(this).parent().attr('id').split("-")[0];
+  var timeSlot = $(this).parent().attr('id');
   
 
   localStorage.setItem(timeSlot, textArea);
