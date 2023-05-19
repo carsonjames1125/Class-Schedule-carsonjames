@@ -29,40 +29,43 @@ $('.saveBtn').on('click', function() {
 
 // Now need to work on setting up a way to grab the items in the local storage by their id and class for the above function
 
-$('#9am .events').val(localStorage.getItem('9am'));
-$('#10am .events').val(localStorage.getItem('10am'));
-$('#11am .events').val(localStorage.getItem('11am'));
-$('#12pm .events').val(localStorage.getItem('12pm'));
-$('#1pm .events').val(localStorage.getItem('1pm'));
-$('#2pm .events').val(localStorage.getItem('2pm'));
-$('#3pm .events').val(localStorage.getItem('3pm'));
-$('#4pm .events').val(localStorage.getItem('4pm'));
-$('#5pm .events').val(localStorage.getItem('5pm'));
-$('#6pm .events').val(localStorage.getItem('6pm'));
+$('#9-am .events').val(localStorage.getItem('9am'));
+$('#10-am .events').val(localStorage.getItem('10am'));
+$('#11-am .events').val(localStorage.getItem('11am'));
+$('#12-pm .events').val(localStorage.getItem('12pm'));
+$('#1-pm .events').val(localStorage.getItem('1pm'));
+$('#2-pm .events').val(localStorage.getItem('2pm'));
+$('#3-pm .events').val(localStorage.getItem('3pm'));
+$('#4-pm .events').val(localStorage.getItem('4pm'));
+$('#5-pm .events').val(localStorage.getItem('5pm'));
+$('#6-pm .events').val(localStorage.getItem('6pm'));
 // this grabs the time from the time block and what ever description is and was in that text area. 
 // and updates accordingly if values are changed
 
-function changeColor() {
 
   // need a variable to determine the time
-  var currentTime = dayjs('hours');
+  // var currentTime = dayjs('hours');
 
   $('.time-block').each(function () {
     // send the function through a loop for all times listed
-    var schTime = parseInt($(this).attr('id').split()[1]);
+    var schTime = $(this).attr("id").split("-")[0];
+    var currentTime = dayjs().format('h');
     // if the time block equals the current time it'll give the class present and remove future or past as the class
     if (schTime < currentTime) {  
       $(this).addClass('past');
+      $(this).removeClass('future');
+      $(this).removeClass('present');
     } else if (schTime === currentTime) {
       $(this).removeClass('future');
       $(this).removeClass('past');
       $(this).addClass('present');
-    } else {
+    } else  if (schTime > currentTime) {
       $(this).removeClass('past');
       $(this).removeClass('present');
       $(this).addClass('future');
+      // could not get function to work and update the colors for the time. 
     }
   });
-}
 
-changeColor();
+
+
