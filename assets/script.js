@@ -29,16 +29,16 @@ $('.saveBtn').on('click', function() {
 
 // Now need to work on setting up a way to grab the items in the local storage by their id and class for the above function
 
-$('#9-am .events').val(localStorage.getItem('9am'));
-$('#10-am .events').val(localStorage.getItem('10am'));
-$('#11-am .events').val(localStorage.getItem('11am'));
-$('#12-pm .events').val(localStorage.getItem('12pm'));
-$('#1-pm .events').val(localStorage.getItem('1pm'));
-$('#2-pm .events').val(localStorage.getItem('2pm'));
-$('#3-pm .events').val(localStorage.getItem('3pm'));
-$('#4-pm .events').val(localStorage.getItem('4pm'));
-$('#5-pm .events').val(localStorage.getItem('5pm'));
-$('#6-pm .events').val(localStorage.getItem('6pm'));
+$('#9-am .events').val(localStorage.getItem('9-am'));
+$('#10-am .events').val(localStorage.getItem('10-am'));
+$('#11-am .events').val(localStorage.getItem('11-am'));
+$('#12-pm .events').val(localStorage.getItem('12-pm'));
+$('#1-pm .events').val(localStorage.getItem('1-pm'));
+$('#2-pm .events').val(localStorage.getItem('2-pm'));
+$('#3-pm .events').val(localStorage.getItem('3-pm'));
+$('#4-pm .events').val(localStorage.getItem('4-pm'));
+$('#5-pm .events').val(localStorage.getItem('5-pm'));
+$('#6-pm .events').val(localStorage.getItem('6-pm'));
 // this grabs the time from the time block and what ever description is and was in that text area. 
 // and updates accordingly if values are changed
 
